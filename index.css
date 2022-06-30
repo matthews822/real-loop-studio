@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+html, body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #202020 0%, #181818 100%);
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.hero {
+  height: 74.2rem;
+  background-image: url("image/images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.icon {
+  position: absolute !important;
+  margin: -1px !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.hero {
+  height: 74.2rem;
+  background-image: url("image/images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.6rem 2.7rem;
+  transition: background-color 0.4s linear;
+}
+#header .logo {
+  width: 16rem;
+}
+#header .logo img {
+  width: 100%;
+}
+#header .navbar {
+  position: absolute;
+  top: 11.966rem;
+  left: 0;
+  height: 100%;
+  background-color: hsl(0deg, 0%, 0%);
+  width: 100%;
+  z-index: 19;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s linear;
+}
+#header .navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.9rem;
+  padding: 20rem 4rem 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+#header .navbar ul li {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#header .navbar ul li a {
+  color: hsl(0deg, 0%, 100%);
+}
+#header .navbar ul li:hover {
+  opacity: 0.8;
+}
+#header .ham-menu {
+  width: 2.4rem;
+  height: 2.2rem;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#header .ham-menu img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main {
+  padding: 15.5rem 2.6rem 0;
+  width: min(66.8rem, 100%);
+  margin: 0 auto;
+}
+#main .Immersive  {
+  border: 0.3rem solid hsl(0deg, 0%, 100%);
+  padding: 3rem 2.9rem 2.1rem;
+  max-width: 65.2rem;
+}
+#main .Immersive  h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: clamp(2.5rem, 9.5vw + 0.2rem, 7.3rem);
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+}
+#main .result {
+  font-size: 1.6rem;
+  color: hsl(0deg, 0%, 100%);
+  display: none;
+}
+#leader {
+  padding: 11.1rem 2.7rem 11.3rem;
+}
+#leader .image {
+  width: min(100%, 73rem);
+  margin: 0 auto;
+}
+#leader .image img {
+  width: 100%;
+}
+#leader .interactive {
+  padding: 5.6rem 1.6rem 0 1.3rem;
+  text-align: center;
+  max-width: 54.5rem;
+  margin: 0 auto;
+}
+#leader .interactive h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+#leader .interactive p {
+  font-family: "Alata", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: hsl(0deg, 0%, 41%);
+}
+
+
+#section-creations {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "t t" "c c" "b b";
+  padding: 0 2.7rem 10.9rem;
+  text-align: center;
+}
+#section-creations .title {
+  grid-area: t;
+  margin-bottom: 5.5rem;
+}
+#section-creations .title h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#section-creations .cards {
+  grid-area: c;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+}
+#section-creations .cards .card {
+  width: 100%;
+  max-width: 45rem;
+  height: 13.8rem;
+  margin: 0 auto;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+#section-creations .cards .card h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  max-width: 12.5rem;
+  text-align: left;
+}
+#section-creations .cards .art01 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-deep-earth.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art01:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-deep-earth.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art01:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .cards .art02 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-night-arcade.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art02:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-night-arcade.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art02:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .cards .art03 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-soccer-team.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art03:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-soccer-team.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art03:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .cards .art04 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-grid.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art04:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-grid.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art04:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .cards .art05 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-from-above.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art05:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-from-above.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art05:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .cards .art06 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-pocket-borealis.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art06:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-pocket-borealis.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art06:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .cards .art07 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-curiosity.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art07:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-curiosity.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art07:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .cards .art08 {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/mobile/image-fisheye.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-creations .cards .art08:hover {
+  background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/mobile/image-fisheye.jpg");
+  background-size: cover;
+}
+#section-creations .cards .art08:hover h3 {
+  color: hsl(0deg, 0%, 0%);
+  opacity: 1;
+}
+#section-creations .ham {
+  grid-area: b;
+  margin: 3.5rem auto 0;
+  display: inline-block;
+  padding: 1.6rem 5rem;
+  font-size: 1.5rem;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.41em;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 0%);
+  border: 0.1rem solid hsl(0deg, 0%, 0%);
+  transition: 0.3s ease-in-out;
+  transition-property: background-color, color;
+}
+#section-creations .ham:hover {
+  background-color: hsl(0deg, 0%, 0%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+#footer {
+  background-color: hsl(0deg, 0%, 0%);
+}
+#footer .container-footer {
+  padding: 6.4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5.6rem;
+  max-width: 111.4rem;
+  margin: 0 auto;
+}
+#footer .container-footer .logo-list .logo {
+  width: 19rem;
+  margin-bottom: 4rem;
+}
+#footer .container-footer .logo-list .logo img {
+  width: 100%;
+}
+#footer .container-footer .logo-list .nav-footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+#footer .container-footer .logo-list .nav-footer ul li {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+#footer .container-footer .logo-list .nav-footer ul li a {
+  font-family: "Alata", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+}
+#footer .container-footer .logo-list.nav-footer ul li:hover {
+  opacity: 0.8;
+}
+#footer .container-footer .logo-list.nav-footer ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -1.2rem;
+  left: calc(50% - 1.2rem);
+  transform: scaleX(0);
+  width: 2.4rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  background-color: hsl(0deg, 0%, 100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#footer .container-footer .logo-list .nav-footer ul li:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+#footer .container-footer .icon-list .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-bottom: 2rem;
+}
+#footer .container-footer .icon-list .icons a {
+  display: inline-block;
+  width: 2.8rem;
+  height: 3.2rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+#footer .container-footer .icon-list .icons a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#footer .container-footer .col2 .icons a:hover {
+  opacity: 0.8;
+}
+#footer .container-footer .icon-list .icons a::after {
+  content: "";
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
+  transform: scaleX(0);
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  background-color: hsl(0deg, 0%, 100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#footer .container-footer .icon-list .icons a:hover::after {
+  opacity: 0.8;
+  transform: scaleX(1);
+}
+#footer .container-footer .icon-list .copy p {
+  font-family: "Alata", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: hsl(0deg, 0%, 55%);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	font-size: 11px;
+	position: fixed;
+	bottom: 2rem;
+	left: 0;
+	right: 0;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    height: 65rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("image/images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain 100%;
+    background-position: center top;
+    background-attachment: fixed;
+  }
+  #header {
+    padding: 5rem;
+  }
+  #header .logo {
+    width: 19.2rem;
+  }
+  #header .navbar {
+    top: 13.3rem;
+  }
+  #header .navbar ul {
+    align-items: center;
+  }
+  #main {
+    padding: 11.5rem 0;
+  }
+  #section-leader .interactive h2 {
+    font-size: 4.8rem;
+  }
+  #section-creations .text-img h2 {
+    font-size: 4.8rem;
+  }
+  #section-creations .cards {
+    max-width: 54.2rem;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+  #section-creations .cards .card {
+    width: 25.6rem;
+    height: 45rem;
+  }
+  #section-creations .cards .art01 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/desktop/image-deep-earth.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art01:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/desktop/image-deep-earth.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art01:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #section-creations .cards .art02 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/desktop/image-night-arcade.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art02:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/desktop/image-night-arcade.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art02:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #section-creations .cards .art03 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/desktop/image-soccer-team.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art03:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/desktop/image-soccer-team.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art03:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #section-creations .cards .art04 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/desktop/image-grid.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art04:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/desktop/image-grid.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art04:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #section-creations .cards .art05 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/desktop/image-from-above.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art05:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/desktop/image-from-above.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art05:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #section-creations .cards .art06 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/desktop/image-pocket-borealis.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art06:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%), url("image/images/desktop/image-pocket-borealis.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art06:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #section-creations .cards .art07 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%), url("image/images/desktop/image-curiosity.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art07:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%),url("image/images/desktop/image-curiosity.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art07:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #section-creations .cards .art08 {
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%),  url("image/images/desktop/image-fisheye.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #section-creations .cards .art08:hover {
+    background: linear-gradient(90deg, hsla(0deg, 0%, 100%, 0.8) 0%, hsla(0deg, 0%, 100%, 0.8) 100%),  url("image/images/desktop/image-fisheye.jpg");
+    background-size: cover;
+  }
+  #section-creations .cards .art08:hover h3 {
+    color: hsl(0deg, 0%, 0%);
+    opacity: 1;
+  }
+  #footer .container-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #footer .container-footer .logo-list.logo {
+    text-align: left;
+    margin-bottom: 2.6rem;
+  }
+  #footer .container-footer .logo-list .nav-footer ul {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #footer .container-footer .logo-list .nav-footer ul li a {
+    font-size: 1.5rem;
+  }
+  #footer .container-footer .icon-list .icons {
+    gap: 1.6rem;
+    justify-content: flex-end;
+  }
+  #footer .container-footer .icon-list .icons a {
+    height: auto;
+  }
+  #footer .container-footer .icon-list .copy p {
+    text-align: right;
+  }
+}
+@media (min-width: 64rem) {
+  #header {
+    max-width: 111.4rem;
+    margin: 0 auto;
+  }
+  #header .navbar {
+    position: static;
+    transform: scaleX(1);
+    width: auto;
+    background-color: inherit;
+  }
+  #header .navbar ul {
+    padding: 0;
+    flex-direction: row;
+    gap: 3.2rem;
+    font-family: "Alata", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    text-transform: capitalize;
+  }
+  #header .navbar ul li {
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #header .navbar ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -1.2rem;
+    left: calc(50% - 1.2rem);
+    transform: scaleX(0);
+    width: 2.4rem;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    background-color: hsl(0deg, 0%, 100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  #header .navbar ul li:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  #header .ham-menu {
+    display: none;
+  }
+  #main {
+    width: auto;
+    max-width: 111.4rem;
+    margin: 0 auto;
+    padding-left: 5rem;
+  }
+  #leader {
+    max-width: 115.4rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 16rem 2rem 18.4rem;
+  }
+  #leader .image {
+    margin: 0;
+  }
+  #leader .interactive {
+    max-width: 55rem;
+    position: absolute;
+    bottom: 18rem;
+    right: 0;
+    text-align: left;
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 9.7rem 0.3rem 0 9.7rem;
+  }
+  #section-creations {
+    max-width: 115.4rem;
+    padding: 0 2rem 18.3rem;
+    margin: 0 auto;
+    grid-template-areas: "t b" "c c" ". .";
+  }
+  #section-creations .text-img {
+    text-align: left;
+    margin-bottom: 8rem;
+  }
+  #section-creations .cards {
+    max-width: 111.4rem;
+  }
+  #section-creations .ham {
+    margin: 0 0 8rem auto;
+    padding: 1.3rem 4.4rem 1.4rem 3.9rem;
+  }
+}
+.ham-active {
+  width: 2rem;
+  height: 2.4rem;
+}
+.ham-active img {
+  content: url("image/images/icon-close.svg");
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header-active {
+  -webkit-animation: changeBackgroundColor 0.6s linear;
+          animation: changeBackgroundColor 0.6s linear;
+  background-color: hsl(0deg, 0%, 0%);
+}
+
+.navbar-active {
+  transform: scaleX(1) !important;
+}
+.attribution {
+  margin: unset;
+  align-items: flex-end;
+}
+.attribution .request-invite-cta {
+  max-inline-size: 80%;
+}
+.attribution small {
+  font-size: 1vw;
+}
+
+@-webkit-keyframes changeBackgroundColor {
+  0% {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  25% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  25% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    background-color: rgb(0, 0, 0);
+  }
+}
+ 
